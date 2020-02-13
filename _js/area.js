@@ -1,5 +1,3 @@
-console.log("hello");
-
 // * Button Animation
 
 $(".button").hide().delay(4000).fadeIn(3000);
