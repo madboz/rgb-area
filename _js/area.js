@@ -1,4 +1,4 @@
-/*** Button Animation ***/
+// * Button Animation
 
 $(".button").hide().delay(4000).fadeIn(3000);
 
@@ -24,7 +24,7 @@ if (Cookies.get("red")) {
     
 }
 
-/*** Translation ***/
+// * Translation
 
 function successCallback(data) {
         
@@ -62,7 +62,7 @@ function successCallback(data) {
     $("body").css("background-color", "rgb( " + red + "," +green + "," + blue + ")");
     $(".archive").append('<div class="swatch" style="background-color: rgb(' + red + ',' + green + ',' + blue + ')"></div>');
     
-    /*** Toggle Archive View ***/
+    // * Toggle Archive
         
     var clicked = false;
 
@@ -72,7 +72,7 @@ function successCallback(data) {
             
             $(".archive").removeClass("hidden");
             $("body").css("background-color", "gainsboro");
-            $(".button").html("Back to Current &#8594;");
+            $(".button").html("Back to current &#8594;");
         
             clicked = true;
             
@@ -80,7 +80,7 @@ function successCallback(data) {
             
             $(".archive").addClass("hidden");
             $("body").css("background-color", "rgb(" + red + "," + green + "," + blue + ")");
-            $(".button").html("&#8592; Location History");
+            $(".button").html("&#8592; Area archive");
             
             clicked = false;
             
@@ -95,10 +95,6 @@ function successCallback(data) {
     Cookies.set("red", storedLat);
     Cookies.set("green", storedLon);
     Cookies.set("blue", storedAlt);
-    
-    // console.log(storedLat);
-    // console.log(storedLon);
-    // console.log(storedAlt);
     
 }
 
@@ -116,7 +112,7 @@ function logLocation() {
        
     } else {
         
-       alert("Functionality not available");
+       console.log("Functionality not available");
        
     }
     
