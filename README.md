@@ -1,2 +1,1 @@
-# RGB Area
-rgb-area.tk
+# rgb-area.tk
